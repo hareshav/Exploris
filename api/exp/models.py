@@ -17,9 +17,9 @@ class Hotels(models.Model):
     type=models.CharField(max_length=100)
     image=models.CharField(max_length=100000,null=True)
     name=models.CharField(max_length=100)
-    number=models.IntegerField(null=True)
+    number=models.CharField(max_length=100,null=True)
     bussiness_registration=models.IntegerField(null=True)
-    rating=models.FloatField(null=True,default=0)
+    rating=models.CharField(max_length=100,null=True)
     def __str__(self):
         return self.name
 class places(models.Model):
